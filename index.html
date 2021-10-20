@@ -37,9 +37,9 @@
   </div>
 </nav>
 		<section  class="jumbotron text-center">
-			<img src="img/bgs.png" width="200" class="rounded-circle img-thumbnail"/>
-			<h1 class="display-4">Mario Bagus P</h1>
-			<p class="lead">Student | Gamer</p>
+			<img id="img1" src="img/bgs.png" width="200" class="rounded-circle img-thumbnail"/>
+			<h1 id="name" class="display-4">Mario Bagus P</h1>
+			<p id ="desc" class="lead">Student | Gamer</p>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" 
 		d="M0,32L24,69.3C48,107,96,181,144,208C192,235,240,213,288,170.7C336,
 		128,384,64,432,48C480,32,528,64,576,90.7C624,117,672,139,720,144C768,
@@ -91,7 +91,7 @@
 						</div>
 						</div>
 					</div>
-					<div class="col-md-4" mb-3>
+					<div class="col-md-4 mb-3" >
 						<div class="card">
 							<img src="img/c.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
@@ -99,7 +99,7 @@
 						</div>
 						</div>
 					</div>
-						<div class="col-md-4" mb-3>
+						<div class="col-md-4 mb-3" >
 						<div class="card">
 							<img src="img/d.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
@@ -107,7 +107,7 @@
 						</div>
 						</div>
 					</div>
-						<div class="col-md-4" mb-3>
+						<div class="col-md-4 mb-3" >
 						<div class="card">
 							<img src="img/e.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
@@ -127,8 +127,16 @@
 			<a href="#"><i class="fa fa-linkedin"></i></a>
 		</footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
+	
+   <script>
+   window.addEventListener('scroll',function(){
+    let value = window.scrollY;
+    document.getElementById('img1').style.top = value * 0.4 + 'px' ;
+	    document.getElementById('desc').style.top = value * 0.4 + 'px' ;
+		  document.getElementById('name').style.top = value * 0.4 + 'px' ;
+	})
+   </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-   
   </body>
 </html>
